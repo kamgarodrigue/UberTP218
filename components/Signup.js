@@ -8,6 +8,7 @@ import firestore from '@react-native-firebase/firestore';
 
 export default class Signup extends Component {
 
+
   constructor() {
     super();
     this.state = {
@@ -82,6 +83,7 @@ export default class Signup extends Component {
           maxLength={15}
           secureTextEntry={true}
         />
+        
         <Button
           color="#3740FE"
           title="Signup"
@@ -94,6 +96,7 @@ export default class Signup extends Component {
           Already Registered? Click here to login
         </Text>
       </View>
+      
     );
   }
 }
@@ -119,6 +122,7 @@ const styles = StyleSheet.create({
     color: '#3740FE',
     marginTop: 25,
     textAlign: 'center',
+  
   },
   preloader: {
     left: 0,

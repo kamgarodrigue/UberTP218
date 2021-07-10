@@ -37,6 +37,7 @@ function MyTabs() {
           tabBarBadge: 3,
         }}
       />
+      
       <Tab.Screen
         name="Profile"
         component={HomeScreen}
@@ -51,9 +52,6 @@ function MyTabs() {
   );
 }
 export default function Dashboard(){
-  return (
-    <NavigationContainer>
-      <MyTabs/>
-    </NavigationContainer>
-  );
+  return <MyTabs/>
+  
 }
